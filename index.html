@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#211711" />
+  <meta name="description" content="Good coffee, thoughtfully made. Explore the Brew & Bean menu, find your new favourite, and get in touch." />
+  <title>Brew & Bean — Coffee for the everyday</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header" id="home">
+    <nav class="navbar wrap" aria-label="Main navigation">
+      <a href="#home" class="logo" aria-label="Brew and Bean home">brew<span>&</span>bean</a>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="menu-links"><span></span><span></span><span></span></button>
+      <ul class="menu-links" id="menu-links">
+        <li><a href="#home">Home</a></li><li><a href="#menu">Our menu</a></li><li><a href="#story">Our story</a></li><li><a href="#contact">Visit us</a></li>
+        <li><button class="cart-button" id="open-cart" aria-label="Open shopping bag">Bag <span id="cart-count">0</span></button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-shade"></div>
+      <div class="hero-content wrap">
+        <p class="eyebrow">GOOD MORNINGS START HERE</p>
+        <h1 id="hero-title">A little pause.<br /><em>A lot of coffee.</em></h1>
+        <p class="hero-copy">Thoughtfully sourced beans, carefully made drinks, and a warm welcome every time.</p>
+        <div class="hero-actions"><a class="button button-light" href="#menu">Explore the menu <span aria-hidden="true">↗</span></a><a class="text-link" href="#story">Get to know us <span aria-hidden="true">↓</span></a></div>
+        <p class="hero-note">Freshly brewed, every single day.</p>
+      </div>
+      <a class="scroll-cue" href="#menu" aria-label="Scroll to our menu">↓</a>
+    </section>
+
+    <section class="intro section-pad">
+      <div class="wrap intro-grid"><p class="eyebrow">YOUR NEIGHBOURHOOD COFFEE STOP</p><div><h2>Good coffee.<br /><em>Good company.</em></h2><p>From the first espresso of the morning to that well-earned afternoon pick-me-up, we make every cup with care. Come on in and stay a while.</p></div><span class="intro-mark" aria-hidden="true">B<span>&</span>B</span></div>
+    </section>
+
+    <section class="menu-section section-pad" id="menu">
+      <div class="wrap">
+        <div class="section-heading"><div><p class="eyebrow">MADE WITH CARE, SERVED WITH A SMILE</p><h2>Something for <em>every mood.</em></h2></div><a class="external-link" href="https://www.starbucks.com/menu" target="_blank" rel="noopener noreferrer">Browse Starbucks’ official menu <span aria-hidden="true">↗</span></a></div>
+        <div class="menu-grid">
+          <article class="menu-card"><div class="card-image image-latte" role="img" aria-label="Latte topped with delicate latte art"></div><div class="card-body"><div class="card-title"><h3>House Latte</h3><span class="price">$4.50</span></div><p>Double espresso, silky steamed milk, and a little latte art.</p><button class="add-button" data-name="House Latte" data-price="4.50">Add to bag <span>+</span></button></div></article>
+          <article class="menu-card"><div class="card-image image-coldbrew" role="img" aria-label="Iced cold brew coffee"></div><div class="card-body"><div class="card-title"><h3>Slow Cold Brew</h3><span class="price">$4.75</span></div><p>Steeped for 16 hours for a smooth, naturally sweet finish.</p><button class="add-button" data-name="Slow Cold Brew" data-price="4.75">Add to bag <span>+</span></button></div></article>
+          <article class="menu-card"><div class="card-image image-cappuccino" role="img" aria-label="Cappuccino dusted with cocoa"></div><div class="card-body"><div class="card-title"><h3>Classic Cappuccino</h3><span class="price">$4.25</span></div><p>Rich espresso under a cloud of soft, velvety foam.</p><button class="add-button" data-name="Classic Cappuccino" data-price="4.25">Add to bag <span>+</span></button></div></article>
+        </div>
+        <p class="menu-disclaimer">Our in-page menu is a sample cafe menu. For real Starbucks locations, availability and ordering, use the official links above.</p>
+      </div>
+    </section>
+
+    <section class="story-section" id="story"><div class="story-photo" role="img" aria-label="Coffee being poured in a welcoming neighborhood cafe"></div><div class="story-copy"><p class="eyebrow">A GOOD CUP HAS A GOOD STORY</p><h2>Small moments,<br /><em>made better.</em></h2><p>We believe the best coffee is the one shared. That's why we work with thoughtful roasters, make things fresh, and save you a seat by the window.</p><a class="button button-dark" href="#contact">Come say hello <span aria-hidden="true">↗</span></a></div></section>
+
+    <section class="visit-section section-pad" id="contact"><div class="wrap visit-grid"><div><p class="eyebrow">YOUR TABLE IS WAITING</p><h2>Make yourself<br /><em>at home.</em></h2></div><div class="visit-detail"><h3>Find a coffeehouse</h3><p>Look up a real Starbucks location near you and check its current details.</p><a href="https://www.starbucks.com/store-locator" target="_blank" rel="noopener noreferrer">Open Starbucks store locator ↗</a></div><div class="visit-detail"><h3>Order your way</h3><p>Browse the real menu and place an order through Starbucks’ official website or app.</p><a href="https://www.starbucks.com/stores-and-ordering" target="_blank" rel="noopener noreferrer">See ordering options ↗</a></div></div></section>
+  </main>
+
+  <footer class="footer"><div class="wrap footer-inner"><a href="#home" class="logo">brew<span>&</span>bean</a><p>Good coffee for the everyday.</p><span>© <span id="year"></span> Brew & Bean</span></div></footer>
+
+  <div class="overlay" id="overlay" hidden></div>
+  <aside class="cart-panel" id="cart-panel" aria-labelledby="cart-title" aria-hidden="true">
+    <div class="cart-header"><div><p class="eyebrow">YOUR LITTLE PICK-ME-UP</p><h2 id="cart-title">Your bag</h2></div><button class="icon-button" id="close-cart" aria-label="Close shopping bag">×</button></div>
+    <div class="cart-items" id="cart-items"><p class="empty-cart">Your bag is empty. Find your favourite in the menu.</p></div>
+    <div class="cart-footer"><div class="cart-total"><span>Subtotal</span><strong id="cart-total">$0.00</strong></div><a class="button button-dark checkout-link" href="https://www.starbucks.com/stores-and-ordering" target="_blank" rel="noopener noreferrer" id="checkout-link">Order from Starbucks ↗</a><p class="cart-note">This sample bag is for browsing. Use Starbucks’ official ordering to place a real order.</p></div>
+  </aside>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
